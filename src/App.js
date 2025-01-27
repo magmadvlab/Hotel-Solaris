@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ThumbsUp, ThumbsDown, Send } from 'lucide-react';
-import logo from './logo-hotel-galassia-prato-nevoso-01.png';
+import logo from './logo-solaris.jpg';
 import faqData from './faq/faqData';
 
 const Header = () => {
   return (
-    <header className="bg-[#B8860B] p-4">
+    <header className="bg-[#3A6BB3] p-4">
       <div className="flex flex-col items-center max-w-4xl mx-auto">
         <img src={logo} alt="Hotel Galassia Logo" className="w-32 mb-2" />
         <div className="text-white text-sm">PRATO NEVOSO ★★★</div>
@@ -176,7 +176,7 @@ const App = () => {
           >
             <div
               className={`max-w-[90%] p-3 rounded-lg ${
-                message.type === 'user' ? 'bg-[#B8860B] text-white' : 'bg-white shadow-sm'
+                message.type === 'user' ? 'bg-[#3A6BB3] text-white' : 'bg-white shadow-sm'
               }`}
             >
               {message.title && (
@@ -188,7 +188,7 @@ const App = () => {
                 <div className="flex space-x-2 mt-2">
                   <button
                     onClick={() => handleFeedback(index, 'positive', message.content)}
-                    className="flex items-center text-[#B8860B] hover:opacity-75"
+                    className="flex items-center text-[#3A6BB3] hover:opacity-75"
                   >
                     <ThumbsUp className="w-4 h-4" />
                   </button>
@@ -213,11 +213,11 @@ const App = () => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Fai una domanda..."
-            className="flex-1 p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#B8860B] text-sm"
+            className="flex-1 p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3A6BB3] text-sm"
           />
           <button
             type="submit"
-            className="bg-[#B8860B] text-white p-3 rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[#B8860B] focus:ring-offset-2"
+            className="bg-[#3A6BB3] text-white p-3 rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[#3A6BB3] focus:ring-offset-2"
           >
             <Send className="w-5 h-5" />
           </button>
