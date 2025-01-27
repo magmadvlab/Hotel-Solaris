@@ -1,4 +1,4 @@
-# Hotel Galassia Prato Nevoso - Chatbot
+# Hotel Solaris Cesana Torinese - Chatbot
 
 Chatbot interattivo per gli ospiti dell'Hotel Galassia di Prato Nevoso. Fornisce informazioni su:
 - Orari check-in/check-out
