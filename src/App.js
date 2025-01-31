@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ThumbsUp, ThumbsDown, Send } from 'lucide-react';
-import logo from './logo-fraiteve.png';
+import logo from './fraiteve_app.png';
 import faqData from './faq/faqData';
 
 const Header = () => {
