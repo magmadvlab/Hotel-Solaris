@@ -1,5 +1,5 @@
 export const checkinFAQ_IT = {
-  title: 'Check-in',
+  // Keywords rimangono invariate perché sono termini generici per il check-in
   keywords: [
     'check-in', 'checkin', 'orario', 'ora', 'quando', 'presto', 'tempo', 'inizio', 
     'registrazione', 'arrivo', 'anticipato', 'prenotazione', 'posso', 'a che ora', 
@@ -12,23 +12,23 @@ export const checkinFAQ_IT = {
   ],
   questions: {
     'A che ora posso fare il check-in?': {
-      answer: 'Il check-in è possibile dalle 10:30, con consegna delle camere garantita dopo le 16:30. La reception è sempre disponibile per custodire i vostri bagagli se arrivate prima. Per garantire un arrivo senza problemi, vi consigliamo di avvisare la reception in caso di arrivo anticipato.',
+      answer: 'Il check-in è disponibile dopo le 16:30. Possiamo consegnare le camere anche dopo mezzogiorno se sono già pronte. Per garantire un arrivo senza problemi, vi consigliamo di avvisare la portineria in anticipo.',
       tags: ['check-in', 'orari', 'arrivo', 'quando', 'tempo', 'inizio', 'a che ora si entra?', 'quando posso arrivare?', 'posso arrivare presto?', 'checkin anticipato?', 'a che ora posso entrare?']
     },
     'Quando posso entrare in camera?': {
-      answer: 'La consegna delle camere è garantita dopo le 16:30. Potete comunque effettuare il check-in dalle 10:30 e lasciare i bagagli in custodia gratuita presso la reception.',
+      answer: 'Potete entrare in camera dopo aver effettuato il check-in.',
       tags: ['camera', 'orari', 'entrata', 'check-in', 'bagagli', 'registrazione', 'quando entro?', 'posso entrare prima?', 'a che ora consegnano la camera?', 'camera pronta quando?', 'checkin anticipato camera?']
     },
     'Posso arrivare prima del check-in?': {
-      answer: 'Sì, potete arrivare prima! La reception è al piano uno (due rampe di scale dall\'ingresso del parcheggio lato pista). Potrete registrarvi e lasciare i bagagli gratuitamente in un\'area dedicata fino alla consegna della camera.',
+      answer: 'Sì, è possibile arrivare prima. Si deve avvisare in anticipo la portineria.',
       tags: ['arrivo', 'anticipato', 'bagagli', 'check-in', 'prima', 'inizio', 'arrivare prima?', 'posso venire prima?', 'check-in anticipato?', 'a che ora posso arrivare?', 'checkin prima camera?']
     },
     'Cosa devo fare se arrivo tardi?': {
-      answer: 'Se arrivate dopo le 22:00, vi preghiamo di informare in anticipo la reception, che è operativa dalle 08:00 alle 22:00, 7 giorni su 7. Saremo lieti di organizzare un check-in notturno su richiesta.',
+      answer: 'Gli arrivi dopo le 23:00 devono informare in anticipo la portineria, che è aperta dalle 08:00 alle 23:00, 7 giorni su 7.',
       tags: ['arrivo', 'tardi', 'ritardo', 'check-in', 'registrazione', 'arrivo notturno?', 'check-in serale?', 'venire tardi?', 'checkin di notte?', 'checkin fuori orario?']
     },
     'Cosa serve per il check-in?': {
-      answer: 'Per il check-in è necessario presentare un documento d\'identità valido per ogni ospite e la conferma della prenotazione. Accettiamo carte di credito, bancomat e contanti per eventuali pagamenti. Il saldo dell\'importo dovuto può essere effettuato al momento dell\'arrivo.',
+      answer: 'Per il check-in servono i documenti di tutti gli ospiti.',
       tags: ['check-in', 'documenti', 'procedure', 'pagamenti', 'registrazione', 'cosa devo portare?', 'serve documento?', 'documento per entrare?', 'prenotazione necessaria?', 'cosa mi serve per checkin?']
     }
   }
