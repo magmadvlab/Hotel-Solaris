@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ThumbsUp, ThumbsDown, Send } from 'lucide-react';
-import logo from './logo-solaris.jpg';
+import logo from './logo-fraiteve.png';
 import faqData from './faq/faqData';
 
 const Header = () => {
   return (
-    <header className="bg-[#3A6BB3] p-4">
+    <header className="bg-[#183A2D] p-4">
       <div className="flex flex-col items-center max-w-4xl mx-auto">
-        <img src={logo} alt="Hotel Galassia Logo" className="w-32 mb-2" />
-        <div className="text-white text-sm">PRATO NEVOSO ★★★</div>
+        <img src={logo} alt="Hotel Fraiteve Logo" className="w-32 mb-2" />
+        <div className="text-white text-sm">CESANA TORINESE ★★★</div>
       </div>
     </header>
   );
@@ -26,7 +26,8 @@ const transformations = {
   'animale': ['pet', 'cane', 'gatto', 'animali'],
   'piano -1': ['sotterraneo', 'sotto', 'basement'],
   'arrivare': ['raggiungere', 'andare', 'trovare'],
-  'prenotare': ['riservare', 'richiedere', 'bisogna prenotare']
+  'prenotare': ['riservare', 'richiedere', 'bisogna prenotare'],
+  'via lattea': ['comprensorio', 'piste', 'sci', 'sciare', 'impianti']
 };
 
 const pluralSingular = {
@@ -38,7 +39,7 @@ const pluralSingular = {
 
 const App = () => {
   const [messages, setMessages] = useState([
-    { type: 'bot', content: 'Ciao, sono Lunaria ✨, l\'assistente virtuale dell\'Hotel Galassia. Sono qui per guidarti tra le stelle alpine e rispondere a tutte le tue domande sul soggiorno. Come posso aiutarti?' },
+    { type: 'bot', content: 'Ciao! Sono Astraia ✨, la tua guida tra le vette della Via Lattea e dell\'Hotel Fraiteve. Ti accompagnerò alla scoperta delle meraviglie di Cesana Torinese e sarò qui per rispondere a tutte le tue domande sul soggiorno. Come posso aiutarti?' },
   ]);
   const [input, setInput] = useState('');
   const messagesEndRef = useRef(null);
@@ -133,7 +134,7 @@ const App = () => {
 
     return [{
       title: 'Info',
-      content: 'Mi dispiace, non ho capito. Prova a chiedere usando parole chiave come "piscina", "check-in" o "navetta".'
+      content: 'Mi dispiace, non ho capito. Prova a chiedere usando parole chiave come "piscina", "check-in" o "impianti".'
     }];
   };
 
@@ -166,7 +167,7 @@ const App = () => {
   };
 
   return (
-    <div className="fixed inset-0 flex flex-col bg-gray-50">
+    <div className="fixed inset-0 flex flex-col bg-[#183A2D]">
       <Header />
       <main className="flex-1 overflow-y-auto p-3 space-y-3">
         {messages.map((message, index) => (
@@ -176,7 +177,7 @@ const App = () => {
           >
             <div
               className={`max-w-[90%] p-3 rounded-lg ${
-                message.type === 'user' ? 'bg-[#3A6BB3] text-white' : 'bg-white shadow-sm'
+                message.type === 'user' ? 'bg-[#183A2D] text-white' : 'bg-white shadow-sm'
               }`}
             >
               {message.title && (
@@ -188,7 +189,7 @@ const App = () => {
                 <div className="flex space-x-2 mt-2">
                   <button
                     onClick={() => handleFeedback(index, 'positive', message.content)}
-                    className="flex items-center text-[#3A6BB3] hover:opacity-75"
+                    className="flex items-center text-[#183A2D] hover:opacity-75"
                   >
                     <ThumbsUp className="w-4 h-4" />
                   </button>
@@ -213,11 +214,11 @@ const App = () => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Fai una domanda..."
-            className="flex-1 p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3A6BB3] text-sm"
+            className="flex-1 p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#183A2D] text-sm"
           />
           <button
             type="submit"
-            className="bg-[#3A6BB3] text-white p-3 rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[#3A6BB3] focus:ring-offset-2"
+            className="bg-[#183A2D] text-white p-3 rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[#183A2D] focus:ring-offset-2"
           >
             <Send className="w-5 h-5" />
           </button>
