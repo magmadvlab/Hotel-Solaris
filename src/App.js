@@ -167,7 +167,7 @@ const App = () => {
   };
 
   return (
-    <div className="fixed inset-0 flex flex-col bg-[#183A2D]">
+    <div className="fixed inset-0 flex flex-col bg-white">
       <Header />
       <main className="flex-1 overflow-y-auto p-3 space-y-3">
         {messages.map((message, index) => (
